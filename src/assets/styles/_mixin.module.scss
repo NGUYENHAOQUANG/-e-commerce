@@ -1,0 +1,21 @@
+// lưu khối code style chung để sử dụng lại
+@mixin radius_common($radius: 10px) {
+  border-radius: $radius;
+}
+
+@mixin btn($w, $h, $color, $radius: 10px) {
+  width: $w;
+  height: $h;
+  background-color: $color;
+  border-color: black;
+  border: 1px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  @include radius_common($radius);
+}
+
+@mixin flex_box_custom($x, $y, $gap: 10px) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+  gap: $gap;
+}
