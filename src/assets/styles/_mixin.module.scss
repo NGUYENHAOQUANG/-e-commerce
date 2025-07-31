@@ -3,13 +3,11 @@
   border-radius: $radius;
 }
 
-@mixin btn($w, $h, $color, $radius: 10px) {
+@mixin btn($w, $h, $radius: 10px, $color) {
   width: $w;
   height: $h;
   background-color: $color;
-  border-color: black;
-  border: 1px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e1e1e1;
   @include radius_common($radius);
 }
 

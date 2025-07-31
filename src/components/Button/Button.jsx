@@ -1,13 +1,6 @@
+import React from "react";
 import styles from "./styles.module.scss";
-
-function MyButton() {
-  return (
-    <div>
-      <button className={styles.btn}>M</button>
-      <button className={styles.btn2}>X</button>
-      <button className={styles.btn3}>add to card</button>
-    </div>
-  );
+export default function Button({ content }) {
+  const { btn } = styles;
+  return <button className={btn}>{content}</button>;
 }
-
-export default MyButton;
